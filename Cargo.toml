@@ -1,0 +1,12 @@
+[workspace]
+members = [ "parser", "engine", "server", "frontend" ]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[workspace.dependencies]
+# External
+# Internal

@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+# -e: Exit immediately if a command fails.
+# -u: Undefined variables are treated as errors.
+set -eu
+
+echo "Running pre-commit checks..."
+
+# Run rustfmt, Rust's formatter.
+echo "    Checking formatting:"
+cargo fmt --all -- --check
+
+# Run clippy, Rust's linter and static analysis tool.
+echo "    Running clippy:"
+cargo clippy --workspace --all-targets --all-features -- -D warnings
+
+# Run all tests
+# echo "    Running tests:"
+# cargo test --all-features
+
+echo "All pre-commit hook checks passed."
