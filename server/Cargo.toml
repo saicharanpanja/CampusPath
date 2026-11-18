@@ -1,6 +1,6 @@
 [package]
 name = "server"
-authors = ["Basmala Morsy"]
+authors = ["Sai Charan Panja"]
 version.workspace = true
 edition.workspace = true
 publish.workspace = true

@@ -1,6 +1,6 @@
 [package]
 name = "engine"
-authors = ["Sai Charan Panja"]
+authors = ["Basmala Morsy"]
 version.workspace = true
 edition.workspace = true
 publish.workspace = true
