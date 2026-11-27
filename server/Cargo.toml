@@ -6,3 +6,12 @@ edition.workspace = true
 publish.workspace = true
 
 [dependencies]
+#Internal
+parser = { workspace = true }
+engine = { workspace = true }
+
+#External
+axum = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+tower-http = { workspace = true }

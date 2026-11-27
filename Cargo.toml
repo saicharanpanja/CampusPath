@@ -8,5 +8,12 @@ edition = "2024"
 publish = false
 
 [workspace.dependencies]
-# External
 # Internal
+parser = { path = "parser" }
+engine = { path = "engine" }
+
+# External
+axum = "0.8"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1", features = ["derive"] }
+tower-http = { version = "0.6", features = ["cors", "fs"] }
